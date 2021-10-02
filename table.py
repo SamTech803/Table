@@ -1,4 +1,4 @@
-#│ ─ ┌ ┬ ┐ ├ ┼ ┤ └ ┴ ┘
+
 def make_table(rows,labels=None,centered=False):
     mainString=""
     maxlist=[]
@@ -119,17 +119,17 @@ def make_table(rows,labels=None,centered=False):
 
     return mainString
 
-t=make_table(
-                rows=[
-                    ["Pneumonoultramicroscopicsilicovolcanoconiosis"],
-                    ["Hippopotomonstrosesquippedaliophobia"],
-                    ["Supercalifragilisticexpialidocious"],
-                    ["Pseudopseudohypoparathyroidism"],
-                    ["Floccinaucinihilipilification"],
-                    ["Antidisestablishmentarianism"],
-                    ["."]
-                ],
-                labels=["My Favourite Long Words"],
-                centered=True
-            )
-print(t)
+if __main__=='__name__':
+    t=make_table(
+                    rows=[
+                        ["Pneumonoultramicroscopicsilicovolcanoconiosis"],
+                        ["Hippopotomonstrosesquippedaliophobia"],
+                        ["Supercalifragilisticexpialidocious"],
+                        ["Pseudopseudohypoparathyroidism"],
+                        ["Floccinaucinihilipilification"],
+                        ["Antidisestablishmentarianism"],
+                        ["."]
+                    ],
+                    labels=["My Favourite Long Words"],
+                    centered=True
+                )
